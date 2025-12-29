@@ -1,0 +1,33 @@
+{
+  "entities": {
+    "Script": {
+      "description": "Script to execute",
+      "on_functions": {
+        "on_exec": {
+          "description": "Executes a script"
+        }
+      }
+    }
+  },
+  "game_functions": {
+    "println": {
+      "description": "Prints a string.",
+      "arguments": [
+        {
+          "name": "str",
+          "type": "string"
+        }
+      ]
+    },
+    "number_to_string": {
+      "description": "Converts a number to a string",
+      "arguments": [
+        {
+          "name": "n",
+          "type": "number"
+        }
+      ],
+      "return_type": "string"
+    }
+  }
+}
