@@ -32,7 +32,7 @@ with open("mods/THE_MOD/code-Script.grug", "w", encoding="utf-8") as f:
 state = grug.init()
 
 @state.game_fn
-def println(code: str):
+def print_string(code: str):
     print(code)
 
 @state.game_fn
