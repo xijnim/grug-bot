@@ -59,8 +59,10 @@ async def on_message(message: discord.Message):
 
     if matches != None:
         result = grug_eval(matches.group(1))
-        await message.reply(result)
-
+        if len(result.encode("utf-8")) >= 2000:
+            await message.reply("Output limit is 2000")
+        else:
+            await message.reply(result)
 
 @bot.event
 async def on_message_edit(before: discord.Message, after: discord.Message):
