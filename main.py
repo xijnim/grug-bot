@@ -15,8 +15,6 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix=';', intents=intents)
 
-secret_role = "Gamer"
-
 @bot.event
 async def on_ready():
     print(f"We are ready to go in, {bot.user.name}")
