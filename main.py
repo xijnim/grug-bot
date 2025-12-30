@@ -37,9 +37,10 @@ def grug_eval(code: str) -> str:
         ["python3", "grug_eval.py", code, path],
         capture_output=True,
         text=True
-    )
+    ).stdout
+    result = f"```\n{result}```"
     shutil.rmtree(path)
-    return result.stdout
+    return result
 
 @bot.event
 async def on_ready():
