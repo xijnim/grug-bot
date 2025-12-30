@@ -1,0 +1,2 @@
+- Improve the deletion of contexts (it doesn't work rn)
+- Help command
