@@ -1,0 +1,4 @@
+grug-lang
+discord
+dotenv
+numpy
