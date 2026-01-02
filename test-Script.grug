@@ -1,0 +1,3 @@
+on_exec() {
+    print_string("hi")
+}

@@ -1,4 +1,3 @@
-import math
 import grug
 import sys
 import os
@@ -18,7 +17,6 @@ os.chdir(path)
 with open("mod_api.json", "w", encoding="utf-8") as f:
     f.write(mod_api)
 
-os.mkdir("dll")
 os.mkdir("mods")
 os.mkdir("mods/THE_MOD")
 
